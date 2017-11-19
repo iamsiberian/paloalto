@@ -62,16 +62,40 @@ body{
     font-size: 15px;
     color: #5b5b5c;
     background-color: #f7f9fc;
+    outline: 0;
+    border: 1px solid #ffffff;
+}
+.cv__table-calendar{
+    background: #f7f9fc url(../pics/calendar.png) no-repeat 350px 13px;
 }
 
 .cv__table__radio-input{
+    margin-top: 18px;
     margin-left: 197px;
 }
 .cv__table__radio-name{
-
+    font-family: "Lato", sans-serif;
+    font-size: 15px;
+    color: #000000;
 }
 .cv__table-submit{
-    margin-left: 197px;
+    margin-top: 42px;
+    margin-left: 162px;
+    margin-bottom: 69px;
+    width: 189px;
+    height: 52px;
+    background: none;
+    color: #5c6bc0;
+    font-family: "LatoBold", sans-serif;
+    font-size: 16px;
+    outline: 0;
+    border: 1px solid #ffffff;
+}
+.cv__table_submit:hover{
+    border-color: #f1f1f1;
+}
+.cv__table-submit:active{
+    border-color: #7d89cd;
 }
 
 .footer{
