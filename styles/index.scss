@@ -1,0 +1,85 @@
+@import 'variables';
+
+.cv{
+  width: 952px;
+  height: auto;
+  margin: auto;
+  background-color: $cv-background-color;
+  padding: 80px 0 0 90px;
+  box-sizing: $cv-box-sizing-border-box;
+  box-shadow: $cv-box-shadow;
+}
+
+.cv__title{
+  font-family: $LatoBold-font-family;
+  font-style: $font-style-normal;
+  font-size: $cv-title-font-size;
+  color: $cv-title-color;
+}
+.cv__divider{
+  width: 90%;
+  height: 2px;
+  background: $cv-divider-background;
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+.cv__form-section{
+  width: 364px;
+  height: auto;
+  margin-top: 40px;
+}
+.cv__table__row-name{
+  display: block;
+  margin-top: 29px;
+  margin-left: 197px;
+  font-family: $LatoBold-font-family;
+  font-size: $cv__table__row-name-font-size;
+  color: $cv__table__row-name-color;
+}
+.cv__table__row-input{
+  width: 364px;
+  height: 56px;
+  margin-top: 14px;
+  margin-left: 197px;
+  padding-left: 31px;
+  font-family: $LatoBold-font-family;
+  font-size: $cv__table__row-input-font-size;
+  color: $cv__table__row-input-color;
+  background-color: $cv__table__row-input-background-color;
+  outline: 0;
+  border: $cv__table__row-input-border;
+}
+.cv__table-calendar{
+  background: #f7f9fc url(../pics/calendar.png) no-repeat 350px 13px;
+}
+
+.cv__table__radio-input{
+  margin-top: 18px;
+  margin-left: 197px;
+}
+.cv__table__radio-name{
+  font-family: $LatoBold-font-family;
+  font-size: $cv__table__radio-name-font-size;
+  color: $cv__table__radio-name-color;
+}
+.cv__table-submit{
+  margin-top: 42px;
+  margin-left: 162px;
+  margin-bottom: 69px;
+  width: 189px;
+  height: 52px;
+  background: $cv__table-submit-background;
+  color: $cv__table-submit-color;
+  font-family: $LatoBold-font-family;
+  font-size: $cv__table-submit-font-size;
+  outline: 0;
+  border: $cv__table-submit-border;
+
+  &:hover{
+    border-color: $cv__table-submit-hover-border-color;
+  }
+  &:active{
+    border-color: $cv__table-submit-active-border-color;
+  }
+}
+

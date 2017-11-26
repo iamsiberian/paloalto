@@ -1,0 +1,13 @@
+@import 'variables';
+
+.header{
+  padding: 77px 0 80px 224px;
+
+  &__title{
+    font-family: $LatoBold-font-family;
+    font-style: $font-style-italic;
+    font-size: $header-font-size;
+    font-weight: 800;
+    color: $header-color;
+  }
+}

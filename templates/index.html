@@ -1,0 +1,114 @@
+{% extends "layout.html" %}
+
+{% block main %}
+<main class="cv">
+    <div class = "cv__title">Profile</div>
+    <div class = "cv__divider"></div>
+
+    <section class="cv__table-section">
+
+
+        <table>
+            <tr>
+                <td>
+                    <form>
+                        <label class = "cv__table__row-name" for="first_name">First Name</label>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <form>
+                        <input class = "cv__table__row-input" id ="first_name" name="first_name" placeholder="John" autofocus tabindex="1">
+                    </form>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <form>
+                        <label class = "cv__table__row-name" for="last_name">Last Name</label>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <form>
+                        <input class = "cv__table__row-input" id ="last_name" name="last_name" placeholder="Doe" tabindex="2">
+                    </form>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <form>
+                        <label class = "cv__table__row-name" for="e-mail">E-mail</label>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <form>
+                        <input class = "cv__table__row-input" id ="e-mail" name="e-mail" placeholder="johndoe@gmail.com" tabindex="3">
+                    </form>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <form>
+                        <label class = "cv__table__row-name" for="phone">Phone</label>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <form>
+                        <input class = "cv__table__row-input" id ="phone" name="phone" placeholder="+_(___)___-__-__" tabindex="4">
+                    </form>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <form>
+                        <label class = "cv__table__row-name" for="birthdate">Date of Birth</label>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <form>
+                        <input class = "cv__table__row-input cv__table-calendar" id ="birthdate" name="birthdate" placeholder="DD/MM/YYYY" tabindex="5">
+                    </form>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label class = "cv__table__row-name">Sex</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <form>
+                        <input class = "cv__table__radio-input" type ="radio" id="male" checked name="sex" value="male" tabindex="6">
+                        <label class = "cv__table__radio-name" for="male">Male</label>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <form>
+                        <input class = "cv__table__radio-input" type ="radio" id="female" name="sex" value="female" tabindex="7">
+                        <label class = "cv__table__radio-name" for="male">Female</label>
+                    </form>
+                </td>
+            </tr>
+        </table>
+
+        <button class="cv__table-submit">SUBMIT</button>
+
+    </section>
+</main>
+{% endblock %}

@@ -1,0 +1,29 @@
+{
+  "name": "paloalto",
+  "version": "1.0.0",
+  "description": "Task from frontend",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamsiberian/paloalto.git"
+  },
+  "author": "Ilya Minyukhin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iamsiberian/paloalto/issues"
+  },
+  "homepage": "https://github.com/iamsiberian/paloalto#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-nunjucks": "^3.0.0",
+    "gulp-sass": "^3.1.0"
+  },
+  "dependencies": {
+    "gulp-cli": "^1.4.0"
+  }
+}
