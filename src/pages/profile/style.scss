@@ -1,0 +1,95 @@
+.profile{
+  width: 952px;
+  height: auto;
+  margin: auto;
+  background-color: #ffffff;
+  padding: 80px 0 0 90px;
+  box-sizing: border-box;
+  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.1);
+}
+
+.profile__title{
+  font-family: "LatoBold", serif;
+  font-style: normal;
+  font-size: 29px;
+  color: #333333;
+}
+.profile__divider{
+  width: 90%;
+  height: 2px;
+  background: #eeeeee;
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+.profile__section{
+  width: 364px;
+  height: auto;
+  margin-top: 40px;
+}
+.form{
+  margin: 0;
+  padding: 0;
+}
+.form__textblock{
+  margin: 0;
+  padding: 0;
+}
+.form__datablock-name{
+  display: block;
+  margin-top: 29px;
+  margin-left: 197px;
+  font-family: "LatoBold", serif;
+  font-size: 15px;
+  color: #000000;
+}
+.form__datablock-input{
+  width: 364px;
+  height: 56px;
+  margin-top: 14px;
+  margin-left: 197px;
+  padding-left: 31px;
+  font-family: "LatoBold", serif;
+  font-size: 15px;
+  color: #5b5b5c;
+  background-color: #f7f9fc;
+  outline: 0;
+  border: 1px solid #ffffff;
+}
+.form__datablock-calendar{
+  background: #f7f9fc url(../images/calendar.png) no-repeat 350px 13px;
+}
+
+
+.radiobutton {
+  margin-left: 197px;
+  margin-top: 10px;
+   
+  color: #333333;
+  &-label {
+    font-family: "Lato", serif;
+    font-size: 20px;
+  }
+}
+
+.form__submit{
+  margin-top: 42px;
+  margin-left: 162px;
+  margin-bottom: 69px;
+  width: 189px;
+  height: 52px;
+  background: none;
+  color: #5c6bc0;
+  font-family: "LatoBold", serif;
+  font-size: 24px;
+  text-transform: uppercase;
+  outline: 0;
+  border: 1px solid #ffffff;
+
+  &:hover{
+    border-color: #f1f1f1;
+  }
+  &:active{
+    border-color: #7d89cd;
+  }
+}
+

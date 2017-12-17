@@ -1,135 +1,133 @@
-.profile{
+.main {
+	display: block;
+}
+
+.posts{
   width: 952px;
   height: auto;
   margin: auto;
-  background-color: #ffffff;
-  padding: 80px 0 0 90px;
-  box-sizing: border-box;
-  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.1);
+  
 }
 
-.profile__title{
-  font-family: "LatoBold", serif;
-  font-style: normal;
-  font-size: 29px;
-  color: #333333;
-}
-.profile__divider{
-  width: 90%;
-  height: 2px;
-  background: #eeeeee;
-  margin-top: 40px;
-  margin-bottom: 15px;
-}
-.profile__section{
-  width: 364px;
-  height: auto;
-  margin-top: 40px;
-}
-.form{
-  margin: 0;
-  padding: 0;
-}
-.form__textblock{
-  margin: 0;
-  padding: 0;
-}
-.form__datablock-name{
-  display: block;
-  margin-top: 29px;
-  margin-left: 197px;
-  font-family: "LatoBold", serif;
-  font-size: 15px;
-  color: #000000;
-}
-.form__datablock-input{
-  width: 364px;
-  height: 56px;
-  margin-top: 14px;
-  margin-left: 197px;
-  padding-left: 31px;
-  font-family: "LatoBold", serif;
-  font-size: 15px;
-  color: #5b5b5c;
-  background-color: #f7f9fc;
-  outline: 0;
-  border: 1px solid #ffffff;
-}
-.form__datablock-calendar{
-  background: #f7f9fc url(../pics/calendar.png) no-repeat 350px 13px;
+.post {
+	width: 100%;
+	margin-bottom: 50px;
+	background-color: #ffffff;
+	box-sizing: border-box;
+  	box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.1);
 }
 
-.radiobutton {
-  font-family: "Lato", serif;
-  font-size: 20px;
-  color: #333333;
-  margin-bottom: 10px;
-  input[type="radio"] {
-    position: absolute;
-    opacity: 0;
-    margin-bottom: 3px;
-    + .radio-label {
-      &:before {
-        content: '';
-        background: #f7f9fC;
-        border-radius: 100%;
-        display: inline-block;
-        width: 16px;
-        height: 16px;
-        position: relative;
-        top: 0;
-        margin-right: 1em;
-        vertical-align: top;
-        cursor: pointer;
-        text-align: center;
-        transition: all 100ms ease;
-      }
-    }
-    &:checked {
-      + .radio-label {
-        &:before {
-          background-color: #5c6bc0;
-          box-shadow: inset 0 0 0 5px #f7f9fC;
-        }
-      }
-    }
-    &:focus {
-      + .radio-label {
-        &:before {
-          outline: none;
-          border-color: #5c6bc0;
-        }
-      }
-    }
-    + .radio-label {
-      &:empty {
-        &:before {
-          margin-right: 0;
-        }
-      }
-    }
-  }
+.post-photo {
+  width: 100%;
+  height: 100%;
 }
 
-.form__submit{
-  margin-top: 42px;
-  margin-left: 162px;
-  margin-bottom: 69px;
-  width: 189px;
-  height: 52px;
-  background: none;
-  color: #5c6bc0;
-  font-family: "LatoBold", serif;
-  font-size: 24px;
-  text-transform: uppercase;
-  outline: 0;
-  border: 1px solid #ffffff;
-
-  &:hover{
-    border-color: #f1f1f1;
-  }
-  &:active{
-    border-color: #7d89cd;
-  }
+.post-data {
+	width: 756px;
+	height: auto;
+	margin: 0px 97px 80px 97px;
+	
+	padding-top: 20px;
+	padding-bottom: 80px;
 }
 
+.head {
+  	display: block;
+  	
+  	
+  	&__mark {
+  		display: block;
+  		width: auto;
+  		margin: 0 -109px 0 765px;
+  		
+  		background-color: #5c6bc0;
+  		color:  #ffffff;
+  		font-size: 13px;
+		padding: 10px 12px 10px 12px;
+		border: none;
+		outline: none;
+  	}
+  	&__date {
+  		display: block;
+  		margin-top: 58px;
+  		color:  #bdbdbd;
+  		font-size: 14px;
+  		line-height: 50px;
+  		text-align: left;
+		
+  	}
+  	&__title {
+  		font-family: "Lato", serif;
+  		font-size: 40px;
+  		font-weight: 700;
+  		line-height: 50px;
+  		text-align: left;
+	
+  	}
+  	&__divider {
+  		border-bottom: 2px solid #eeeeee;
+  		margin-top: 48px;
+  		margin-bottom: 48px;
+  	}
+}
+
+.text{
+	font-family: "Lato", serif;
+	font-size: 17px;
+  	font-weight: 400;
+  	line-height: 30px;
+	color: #414141;
+}
+
+.text-quote {
+	font-family: "Lato", serif;
+  	color: #7f7f7f;
+  	margin-bottom: 46px;
+  	font-size: 25px;
+  	font-style: italic;
+	line-height: 38px;
+}
+
+.foot {
+	margin-top: 58px;
+
+}
+
+.button {
+	display: inline-block;
+	margin-left: -35px;
+  	width: 189px;
+  	height: 52px;
+  	background: none;
+  	color: #5c6bc0;
+  	font-family: "LatoBold", serif;
+  	font-size: 21px;
+  	text-transform: uppercase;
+  	outline: 0;
+  	border: 1px solid #ffffff;
+
+  	&:hover{
+    	border-color: #f1f1f1;
+  	}
+  	&:active{
+    	border-color: #7d89cd;
+  	}
+}
+
+.hashtag {
+	display: inline-block;
+	float: right;
+}
+.hashtag_link {
+  	text-decoration: none;
+  	color:  #b2b2b2;
+  	font-size: 15px;
+  	font-weight: 400;
+  	line-height: 50px;
+  	margin: 0 10px 0 0;
+  	float: left;
+
+	&:hover {
+  	color:  #5c6bc0;
+	}
+}

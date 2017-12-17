@@ -1,0 +1,16 @@
+/* normalize */
+@import "./vendor/normalize";
+
+/* Fonts */
+@import "./fonts";
+
+/* Layout */
+@import "./partials/layout/style";
+
+/* Pages */
+@import "./pages/index/style";
+@import "./pages/profile/style";
+
+/* Partials */
+@import "./partials/includes/header/style";
+@import "./partials/includes/footer/style";

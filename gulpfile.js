@@ -9,7 +9,7 @@ var sourcemaps = require('gulp-sourcemaps');
 var concat = require('gulp-concat');
 
 var path = {
-    css:  '/src/styles/*.scss',
+    css:  './src/*.scss',
     fonts: './src/fonts/**',
     images: './src/images/**',
     html: {
@@ -32,17 +32,14 @@ gulp.task('default', ['build', 'serve', 'watch']);
 
 gulp.task('css', function () {
     return gulp.src(path.css)
-    	.pipe(sourcemaps.init())
-        .pipe(autoprefixer())
-        .pipe(concat('main.css'))
-        .pipe(sourcemaps.write('.'))
-        .pipe(gulp.dest('dist'))
-
-    /*
         .pipe(sass().on('error', sass.logError))
-        .pipe(concat('main.css'))
+        .pipe(autoprefixer({
+            browsers: ['last 4 versions']
+        }))
+        .pipe(sourcemaps.init())
+        .pipe(cssmin())
+        .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest(path.dist.css));
-        */
 });
 
 gulp.task('html', function () {

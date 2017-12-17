@@ -1,0 +1,36 @@
+.header {
+  margin: auto;
+  width: 952px;
+  height: auto;
+  padding: 77px 0 80px 0px;
+
+  &__title {
+    /*display: inline-block;*/
+    font-family: "LatoBold", serif;
+    font-style: italic;
+    font-size: 42px;
+    /*font-weight: 800;*/
+    color: #333333;
+  }
+}
+
+.header-nav{
+  display: inline-block;
+  float: right;
+  font-size: 16px;
+  /*text-transform: uppercase;*/
+  word-spacing: 33px;
+
+  &__link {
+    text-decoration: none;
+    color: #333333;
+    font-family: "LatoBold", serif;
+  }
+
+  &__search{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url(./images/search_dark.png);
+  }
+}
