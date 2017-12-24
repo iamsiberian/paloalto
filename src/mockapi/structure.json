@@ -1,24 +1,27 @@
 {
-	"posts": {
-		"post1": {
-			"post-photo": "",
+	"posts": [
+
+		{
 			"head__mark": "I Do Travel",
 			"head__date": ["Sep", 20],
 			"head__title": "No difference how many peaks you reach if there was no pleasure in the climb.",
-			"head__divider": "",
-			"text-quote": "",
 			"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 			"hashtag-link": ["#Yosemite", "#Peak", "#Explorer"]
 		},
-		"post2": {
-			"post-photo": "./images/mountain.jpg",
+		
+		{
+			"post-photo": {
+				"srcset" : "./images/mountain.jpg",
+				"width":952,
+        		"height":533,
+        		"alt": "mountain"
+			},
 			"head__mark": "I Do Observe",
 			"head__date": ["Sep", 18],
 			"head__title": "No difference how many peaks you reach if there was no pleasure in the climb.",
-			"head__divider": "",
 			"text-quote": "Curabitur luctus placerat lorem id eleifend. Nulla ac lacus finCurabitur luctus placerat lorem id eleifend. Nulla ac lacus finCurabitur luctus placerat lorem id eleifend. Nulla ac lacus finCurabitur luctus placerat lorem id eleifend. Nulla ac lacus finCurabitur luctus placerat lorem id eleifend. Nulla ac lacus fin",
 			"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 			"hashtag-link": ["#Yosemite", "#Peak", "#Photo"]
 		}
-	}
+	]
 }

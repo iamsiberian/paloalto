@@ -1,0 +1,31 @@
+{{#posts}}
+<div class="post">
+    {{#if post-photo}}
+    <img class="post-photo" srcset="{{post-photo.srcset}}" width="{{post-photo.width}}"
+             height="{{post-photo.height}}" alt="{{post-photo.alt}}">
+    {{/if}}
+    <div class="post-data">
+        <header class="head">
+            <div class="head__mark">{{head__mark}}</div>
+            <div class="head__date">{{head__date}}</div>
+            <h2 class="head__title">{{head__title}}</h2>
+            <div class="head__divider"></div>
+        </header>
+        
+        {{#if text-quote}}
+        <div class="text-quote">{{text-quote}}</div>
+        {{/if}}
+
+        <div class="text">{{text}}</div>
+
+        <div class="foot">
+            <a class="button" href="">Read more</a>
+            <div class="hashtag">
+                {{#each hashtag-link}}
+                    <a class="hashtag-link" href="">{{hashtag-link}}</a>
+                {{/each}}
+            </div>
+        </div>
+    </div>
+</div>
+{{/posts}}
