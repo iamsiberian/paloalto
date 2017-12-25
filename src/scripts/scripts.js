@@ -1,3 +1,4 @@
+/*
 //https://github.com/chrislkeller/projects.chrislkeller.com/tree/master/demos/ajax-handlebars
 
 var jqueryNoConflict = jQuery;
@@ -14,6 +15,7 @@ function retriveData() {
     jqueryNoConflict.getJSON(dataSource, renderDataVisualsTemplate);
 };
 
+
 // render compiled handlebars template
 function renderDataVisualsTemplate(data){
     handlebarsDebugHelper();
@@ -26,6 +28,7 @@ function getTemplateAjax(path, callback) {
     jqueryNoConflict.ajax({
         url: path,
         success: function (data) {
+            debugger;
             source = data;
             template = Handlebars.compile(source);
             if (callback) callback(template);
@@ -48,3 +51,25 @@ function handlebarsDebugHelper(){
         console.log(this);
     });
 };
+
+*/
+
+$(document).ready(function () {
+
+  $.ajax({
+    url: './mockapi/structure.json',
+    success: function(data) {
+      this.articles = $('.posts');
+      var self = this;
+
+      if (data.posts && data.posts.length) {
+        data.posts.forEach(function(article) {
+          self.articles.append(
+            blocks.templates['posts'](article)
+          );
+        });
+      }
+    }
+  });
+
+});

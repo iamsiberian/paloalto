@@ -9,9 +9,6 @@
     <link rel="stylesheet" href="./main.css">
     <link rel="shortcut icon" type="image/png" href="./images/favicon-32x32.png" sizes="32x32">
 
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.rc.1/handlebars.min.js"></script>
-    <script src="./scripts/scripts.js"></script>
 </head>
 <body>
     {{> includes/header/header}}
@@ -20,5 +17,9 @@
     {{/main-block}}
 
     {{> includes/footer/footer}}
+
+    <script src="./vendor.js" defer></script>
+    <script src="./templates.js" defer></script>
+    <script src="./scripts/scripts.js" defer></script>
 </body>
 </html>

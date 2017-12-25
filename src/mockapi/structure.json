@@ -6,7 +6,7 @@
 			"head__date": ["Sep", 20],
 			"head__title": "No difference how many peaks you reach if there was no pleasure in the climb.",
 			"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-			"hashtag-link": ["#Yosemite", "#Peak", "#Explorer"]
+			"hashtag_link": ["#Yosemite", "#Peak", "#Explorer"]
 		},
 		
 		{
@@ -21,7 +21,7 @@
 			"head__title": "No difference how many peaks you reach if there was no pleasure in the climb.",
 			"text-quote": "Curabitur luctus placerat lorem id eleifend. Nulla ac lacus finCurabitur luctus placerat lorem id eleifend. Nulla ac lacus finCurabitur luctus placerat lorem id eleifend. Nulla ac lacus finCurabitur luctus placerat lorem id eleifend. Nulla ac lacus finCurabitur luctus placerat lorem id eleifend. Nulla ac lacus fin",
 			"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-			"hashtag-link": ["#Yosemite", "#Peak", "#Photo"]
+			"hashtag_link": ["#Yosemite", "#Peak", "#Photo"]
 		}
 	]
 }

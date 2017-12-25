@@ -1,5 +1,6 @@
 var gulp = require('gulp');
-var handlebars = require('gulp-compile-handlebars');
+var compileHandlebars = require('gulp-compile-handlebars');
+var handlebars = require('gulp-handlebars');
 var sass = require('gulp-sass');
 var rename = require('gulp-rename');
 var browserSync = require('browser-sync').create();
@@ -7,6 +8,8 @@ var cssmin = require('gulp-cssmin');
 var autoprefixer = require('gulp-autoprefixer');
 var sourcemaps = require('gulp-sourcemaps');
 var concat = require('gulp-concat');
+var wrap = require('gulp-wrap');
+var declare = require('gulp-declare');
 var uglify = require('gulp-uglify'); /* js-min not used */
 
 var path = {
@@ -15,7 +18,10 @@ var path = {
     images: './src/images/**',
     js: './src/scripts/*.js',
     mock: './src/mockapi/*.json',
-    partials: './src/partials/render/*.hbs',
+    templates: './src/templates/post/*.hbs',
+    vendor: {
+        js: './src/vendor/js/*.js'
+    },
     html: {
         pages: './src/pages/**/*.hbs',
         partials: './src/partials/'
@@ -25,9 +31,12 @@ var path = {
         html: './dist/',
         fonts: './dist/fonts/',
         images: './dist/images/',
-        partials: './dist/partials/render',
+        templates: './dist/',
         js: './dist/scripts/',
-        mock: './dist/mockapi/'
+        mock: './dist/mockapi/',
+        vendor: {
+            js: './dist/'
+        }
     },
     watch: {
         css: './src/pages/**/*.scss',
@@ -53,7 +62,7 @@ gulp.task('css', function () {
 
 gulp.task('html', function () {
     return gulp.src(path.html.pages)
-        .pipe(handlebars({}, {
+        .pipe(compileHandlebars({}, {
             ignorePartials: true,
             batch: [path.html.partials]
         }))
@@ -80,18 +89,33 @@ gulp.task('js', function () {
     .pipe(gulp.dest(path.dist.js));
 });
 
+gulp.task('vendor_js', function () {
+  return gulp.src(path.vendor.js)
+    .pipe(concat('vendor.js'))
+    .pipe(gulp.dest(path.dist.vendor.js));
+});
+
 gulp.task('mock', function () {
   return gulp.src(path.mock)
     .pipe(gulp.dest(path.dist.mock));
 });
 
-gulp.task('partials', function () {
-    return gulp.src(path.partials)
-        .pipe(gulp.dest(path.dist.partials));
+gulp.task('hbs_templates', function() {
+  return gulp.src(path.templates)
+    .pipe(handlebars({
+      handlebars: require('handlebars')
+    }))
+    .pipe(wrap('Handlebars.template(<%= contents %>)'))
+    .pipe(declare({
+      namespace: 'blocks.templates',
+      noRedeclare: true
+    }))
+    .pipe(concat('templates.js'))
+    .pipe(gulp.dest(path.dist.templates))
 });
 
 
-gulp.task('build', ['html', 'css', 'js', 'fonts', 'images', 'mock', 'partials']);
+gulp.task('build', ['html', 'css', 'js', 'vendor_js', 'fonts', 'images', 'mock', 'hbs_templates']);
 
 gulp.task('watch', function () {
     gulp.watch(path.watch.css, ['css']);

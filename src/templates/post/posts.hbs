@@ -1,4 +1,3 @@
-{{#posts}}
 <div class="post">
     {{#if post-photo}}
     <img class="post-photo" srcset="{{post-photo.srcset}}" width="{{post-photo.width}}"
@@ -21,11 +20,10 @@
         <div class="foot">
             <a class="button" href="">Read more</a>
             <div class="hashtag">
-                {{#each hashtag-link}}
-                    <a class="hashtag-link" href="">{{hashtag-link}}</a>
+                {{#each hashtag_link}}
+                    <a class="hashtag_link" href="">{{this}}</a>
                 {{/each}}
             </div>
         </div>
     </div>
 </div>
-{{/posts}}
