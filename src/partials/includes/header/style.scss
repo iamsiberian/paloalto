@@ -34,3 +34,12 @@
     background: url(./images/search_dark.png);
   }
 }
+
+@media screen and (max-width: 1024px) {
+    .header {
+        width: 750px;     
+    }
+    .header-nav {
+            
+    }
+}

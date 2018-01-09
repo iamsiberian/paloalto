@@ -15,7 +15,7 @@ var uglify = require('gulp-uglify'); /* js-min not used */
 var path = {
     css:  './src/*.scss',
     fonts: './src/fonts/**',
-    images: './src/images/**',
+    images: './src/**/images/*',
     js: './src/scripts/*.js',
     mock: './src/mockapi/*.json',
     templates: './src/templates/post/*.hbs',
@@ -80,6 +80,7 @@ gulp.task('fonts', function () {
 
 gulp.task('images', function () {
     return gulp.src(path.images)
+        .pipe(rename ({dirname: '.'}))
         .pipe(gulp.dest(path.dist.images));
 });
 

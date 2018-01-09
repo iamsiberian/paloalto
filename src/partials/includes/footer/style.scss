@@ -81,3 +81,29 @@
     }
   }
 }
+
+@media only screen and (min-device-pixel-ratio: 1.5),
+(min-resolution: 144dpi) {
+  .social__link {
+    background-image: url("./images/social-networks@2x.png");
+  }
+}
+
+@media screen and (max-width: 1024px) {
+    .footer {
+        margin-top: 55px;
+        padding-bottom: 35px;
+    }
+    .footer__title {
+        padding-top: 35px;
+    }
+    .footer__logo {
+        padding-top: 35px;
+    }
+    .footer-menu {
+        margin: 37px 0 35px 0;
+    }
+    .footer__copyrights {
+        margin-bottom: 20px;
+    }
+}

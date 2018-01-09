@@ -15,6 +15,8 @@
 	background-color: #ffffff;
 	box-sizing: border-box;
   	box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.1);
+
+    //position: relative;
 }
 
 .post-photo {
@@ -29,16 +31,24 @@
 	
 	padding-top: 20px;
 	padding-bottom: 80px;
+       
+    position: relative;
 }
 
 .head {
-  	display: block;
-  	
+  	display: inline-block;
+    
   	
   	&__mark {
-  		display: block;
-  		width: auto;
-  		margin: 0 -109px 0 765px;
+  		//display: block;
+
+        display: inline-block;
+        position: absolute;
+        top: 20px;
+        right: -110px;
+
+  		//width: auto;
+  		//margin: 0 -109px 0 765px;
   		
   		background-color: #5c6bc0;
   		color:  #ffffff;
@@ -94,11 +104,13 @@
 }
 
 .button {
+
 	display: inline-block;
-  text-decoration: none;
+    text-decoration: none;
 	margin-left: -35px;
-  	width: 189px;
-  	height: 52px;
+    padding: 20px 35px 20px 35px;
+  	//width: 189px;
+  	//height: 52px;
   	background: none;
   	color: #5c6bc0;
   	font-family: "LatoBold", serif;
@@ -131,4 +143,51 @@
 	&:hover {
   	color:  #5c6bc0;
 	}
+}
+
+@media screen and (max-width: 1024px) {
+    .posts {
+        width: 750px;
+    }
+
+    .post-data {
+        width: 650px;
+        padding-bottom: 50px;
+    }
+
+    .post {
+        
+    }
+    
+    .head {
+        padding-right: 40px;    
+    }
+
+    .head__mark {
+        right: -15px;  
+    }    
+    
+    .head__title {
+        font-size: 24px;
+    }
+
+    .head__divider {
+        width: 95%;
+        margin-top: 24px;
+  		margin-bottom: 24px;
+    }
+    .text-quote {
+        padding-right: 50px;
+        font-size: 18px;
+    }
+
+    .text {
+        padding-right: 50px;
+        font-size: 16px;
+    }
+
+    .hashtag {
+        margin-right: 50px;    
+    }
+    
 }
